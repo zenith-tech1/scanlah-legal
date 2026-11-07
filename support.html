@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScanLah Support</title>
+<style>
+  :root {
+    --bg: #F3F1E9;
+    --fg: #1F2A44;
+    --muted: rgba(31, 42, 68, 0.66);
+    --card: #FBF9F2;
+    --border: rgba(31, 42, 68, 0.16);
+    --accent: #1565C0;
+    --accent-2: #1565C0;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1A17;
+      --fg: #F3F1E9;
+      --muted: rgba(243, 241, 233, 0.66);
+      --card: #242320;
+      --border: rgba(243, 241, 233, 0.16);
+      --accent: #64A0E8;
+      --accent-2: #64A0E8;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1A17;
+    --fg: #F3F1E9;
+    --muted: rgba(243, 241, 233, 0.66);
+    --card: #242320;
+    --border: rgba(243, 241, 233, 0.16);
+    --accent: #64A0E8;
+    --accent-2: #64A0E8;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 48px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1, h2 {
+    font-family: "Fraunces", Georgia, serif;
+    color: var(--fg);
+    text-wrap: balance;
+  }
+  .eyebrow {
+    font-family: "Space Mono", "SF Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .ticket-header {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 28px 20px;
+  }
+  .ticket-header h1 { font-size: clamp(28px, 6vw, 36px); margin: 10px 0 4px; font-weight: 600; }
+  .ticket-header .tagline { color: var(--muted); font-size: 14px; margin: 0 0 18px; }
+  .ticket-header .meta-row {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    font-family: "Space Mono", monospace; font-size: 12px; color: var(--muted);
+    border-top: 1px dashed var(--border); padding-top: 14px;
+  }
+  .tldr {
+    margin-top: 28px; background: var(--card); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-2); border-radius: 8px; padding: 18px 22px;
+  }
+  .tldr .eyebrow { color: var(--accent-2); }
+  .tldr ul { margin: 10px 0 0; padding-left: 20px; }
+  .tldr li { margin: 6px 0; line-height: 1.5; }
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+  .section-num { font-family: "Space Mono", monospace; font-size: 13px; color: var(--accent); flex-shrink: 0; }
+  h2 { font-size: 20px; font-weight: 600; margin: 0; }
+  h3 { font-family: "Public Sans", sans-serif; font-size: 15px; font-weight: 700; margin: 20px 0 6px; }
+  p { max-width: 66ch; line-height: 1.65; margin: 10px 0; }
+  ul { max-width: 66ch; line-height: 1.65; padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent-2); }
+  .fine {
+    margin-top: 56px; padding-top: 20px; border-top: 1px dashed var(--border);
+    color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .contact {
+    margin-top: 40px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 20px 22px;
+  }
+  .contact h2 { font-size: 18px; }
+  .email { font-family: "Space Mono", monospace; font-size: 15px; color: var(--fg); }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+  <div class="ticket-header">
+    <span class="eyebrow">Support</span>
+    <h1>ScanLah</h1>
+    <p class="tagline">PDF document scanner</p>
+    <div class="meta-row"></div>
+  </div>
+  <section>
+    <h2>Get in touch</h2>
+    <p><span class="email">scanlah.app@gmail.com</span></p>
+    <p>We read every email and usually reply within a few days. Include your iOS version and, if it is about scanning, what kind of page you were scanning.</p>
+  </section>
+  <section>
+    <h3>Why is the text on my scan wrong or missing?</h3>
+    <p>Good light and a flat, unfolded page make the biggest difference. Retake the page, or use Rotate if it came out sideways. Text recognition can make mistakes, so check important numbers and names.</p>
+    <h3>Does ScanLah need an account?</h3>
+    <p>No. There is no sign-up or login. Your documents are stored only on your phone, so keep your own backups (use Back up in the app).</p>
+    <h3>How do I cancel ScanLah Pro?</h3>
+    <p>In iOS Settings → your name → Subscriptions → ScanLah. Cancel at least 24 hours before the renewal date. Refunds are handled by Apple.</p>
+    <h3>Where is your privacy policy?</h3>
+    <p><a href="./">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+  </section>
+
+</main>
+</body>
+</html>

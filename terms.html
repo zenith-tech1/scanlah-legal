@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScanLah Terms of Use</title>
+<style>
+  :root {
+    --bg: #F3F1E9;
+    --fg: #1F2A44;
+    --muted: rgba(31, 42, 68, 0.66);
+    --card: #FBF9F2;
+    --border: rgba(31, 42, 68, 0.16);
+    --accent: #1565C0;
+    --accent-2: #1565C0;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1A17;
+      --fg: #F3F1E9;
+      --muted: rgba(243, 241, 233, 0.66);
+      --card: #242320;
+      --border: rgba(243, 241, 233, 0.16);
+      --accent: #64A0E8;
+      --accent-2: #64A0E8;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1A17;
+    --fg: #F3F1E9;
+    --muted: rgba(243, 241, 233, 0.66);
+    --card: #242320;
+    --border: rgba(243, 241, 233, 0.16);
+    --accent: #64A0E8;
+    --accent-2: #64A0E8;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 48px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1, h2 {
+    font-family: "Fraunces", Georgia, serif;
+    color: var(--fg);
+    text-wrap: balance;
+  }
+  .eyebrow {
+    font-family: "Space Mono", "SF Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .ticket-header {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 28px 20px;
+  }
+  .ticket-header h1 { font-size: clamp(28px, 6vw, 36px); margin: 10px 0 4px; font-weight: 600; }
+  .ticket-header .tagline { color: var(--muted); font-size: 14px; margin: 0 0 18px; }
+  .ticket-header .meta-row {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    font-family: "Space Mono", monospace; font-size: 12px; color: var(--muted);
+    border-top: 1px dashed var(--border); padding-top: 14px;
+  }
+  .tldr {
+    margin-top: 28px; background: var(--card); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-2); border-radius: 8px; padding: 18px 22px;
+  }
+  .tldr .eyebrow { color: var(--accent-2); }
+  .tldr ul { margin: 10px 0 0; padding-left: 20px; }
+  .tldr li { margin: 6px 0; line-height: 1.5; }
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+  .section-num { font-family: "Space Mono", monospace; font-size: 13px; color: var(--accent); flex-shrink: 0; }
+  h2 { font-size: 20px; font-weight: 600; margin: 0; }
+  h3 { font-family: "Public Sans", sans-serif; font-size: 15px; font-weight: 700; margin: 20px 0 6px; }
+  p { max-width: 66ch; line-height: 1.65; margin: 10px 0; }
+  ul { max-width: 66ch; line-height: 1.65; padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent-2); }
+  .fine {
+    margin-top: 56px; padding-top: 20px; border-top: 1px dashed var(--border);
+    color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .contact {
+    margin-top: 40px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 20px 22px;
+  }
+  .contact h2 { font-size: 18px; }
+  .email { font-family: "Space Mono", monospace; font-size: 15px; color: var(--fg); }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+  <div class="ticket-header">
+    <span class="eyebrow">Terms of Use</span>
+    <h1>ScanLah</h1>
+    <p class="tagline">PDF document scanner</p>
+    <div class="meta-row">
+      <span>EFFECTIVE&nbsp;07&nbsp;NOV&nbsp;2026</span>
+      <span>VER&nbsp;1.0</span>
+    </div>
+  </div>
+  <div class="tldr">
+    <span class="eyebrow">In short</span>
+    <ul>
+      <li>ScanLah scans, reads, stores, searches and exports documents on your phone.</li>
+      <li>ScanLah Pro is an auto-renewing subscription with an optional 7-day free trial; Apple handles payment and cancelling.</li>
+      <li>Your documents stay on your phone, so keep your own backups of anything important.</li>
+    </ul>
+  </div>
+  <section>
+    <div class="section-head"><span class="section-num">01</span><h2>The app</h2></div>
+    <p>ScanLah lets you scan, read, store, search and export documents on your phone. You are responsible for what you scan and for having the right to copy it.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">02</span><h2>ScanLah Pro</h2></div>
+    <p>Pro is an auto-renewing subscription (monthly or yearly) that removes ads and unlocks the Pro features. The price is shown in the app, in your currency, before you confirm.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">03</span><h2>Free trial</h2></div>
+    <p>New subscribers whose Apple ID has not had a ScanLah trial can start a 7-day free trial. Unless you cancel at least 24 hours before it ends, your Apple ID is charged the plan price when the trial ends. Each Apple ID gets one trial.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">04</span><h2>Payment, renewal and cancelling</h2></div>
+    <p>Payment is taken from your Apple ID at confirmation of purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, and your account is charged for renewal within 24 hours before the period ends. Manage or cancel in iOS Settings → your name → Subscriptions. Refunds are handled by Apple.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">05</span><h2>Your data</h2></div>
+    <p>See the <a href="./">Privacy Policy</a>. Documents stay on your phone; keep your own backups of anything important. Deleting a document or the app cannot be undone.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">06</span><h2>No guarantees</h2></div>
+    <p>Text recognition can make mistakes: check important numbers and names. The app is provided "as is" and, to the extent the law allows, we are not liable for lost data or indirect loss.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">07</span><h2>Apple</h2></div>
+    <p>These terms are between you and ScanLah, not Apple. Apple's standard licence terms for apps also apply: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>.</p>
+  </section>
+  <section>
+    <div class="section-head"><span class="section-num">08</span><h2>Governing law</h2></div>
+    <p>These terms are governed by the laws of Singapore.</p>
+  </section>
+  <div class="contact">
+    <h2>Questions?</h2>
+    <p>Email us at <span class="email">scanlah.app@gmail.com</span>.</p>
+  </div>
+  <p class="fine">Also: <a href="./">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a></p>
+
+</main>
+</body>
+</html>
